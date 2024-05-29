@@ -46,7 +46,7 @@ def test_contexts_publish() -> None:
 def test_events_subscribe_without_annotations() -> None:
     """It fails when the handler has no type annotations."""
     bus = Bus()
-    with pytest.raises(Exception):
+    with pytest.raises(StopIteration):
 
         @bus.events.subscribe
         def handler(event):  # type: ignore[no-untyped-def]
@@ -56,7 +56,7 @@ def test_events_subscribe_without_annotations() -> None:
 def test_contexts_subscribe_without_annotations() -> None:
     """It fails when the handler has no type annotations."""
     bus = Bus()
-    with pytest.raises(Exception):
+    with pytest.raises(StopIteration):
 
         @bus.contexts.subscribe
         def handler(event):  # type: ignore[no-untyped-def]

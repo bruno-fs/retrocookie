@@ -32,7 +32,7 @@ def find_template_directory(repository: git.Repository) -> Path:
     for path in repository.path.iterdir():
         if path.is_dir() and all(x in path.name for x in tokens):
             return path.relative_to(repository.path)
-    raise Exception("cannot find template directory")
+    raise FileNotFoundError("cannot find template directory")
 
 
 def load_context(repository: git.Repository, ref: str) -> Dict[str, Any]:

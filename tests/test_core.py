@@ -176,7 +176,7 @@ def test_multiple_commits_parallel(
 def test_find_template_directory_fails(tmp_path: Path) -> None:
     """It raises an exception when there is no template directory."""
     repository = git.Repository.init(tmp_path)
-    with pytest.raises(Exception):
+    with pytest.raises(FileNotFoundError):
         core.find_template_directory(repository)
 
 

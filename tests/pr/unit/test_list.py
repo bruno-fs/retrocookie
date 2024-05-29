@@ -7,6 +7,7 @@ from typing import List
 import pytest
 
 from retrocookie.pr.base.bus import Bus
+from retrocookie.pr.base.bus import Error
 from retrocookie.pr.list import list_pull_requests
 from retrocookie.pr.protocols.github import PullRequest as AbstractPullRequest
 from tests.pr.unit.fakes import github
@@ -126,6 +127,6 @@ def test_list_not_found(
 ) -> None:
     """It lists all pull requests."""
     repository._pull_requests = pull_requests
-    with pytest.raises(Exception):
+    with pytest.raises(Error, match="PullRequestNotFound"):
         for _ in list_pull_requests(repository, specs, bus=bus):
             pass
