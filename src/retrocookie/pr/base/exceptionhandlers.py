@@ -344,7 +344,7 @@ def exceptionhandler(
 
     """
     if all(isinstance(arg, type) and issubclass(arg, BaseException) for arg in args):
-        exception_types: Tuple[Type[BaseException]] = args  # type: ignore[assignment]
+        exception_types: Tuple[Type[BaseException], ...] = args  # type: ignore[assignment]
         return _exceptionhandler(*exception_types)
 
     callback: _Callback[E]
