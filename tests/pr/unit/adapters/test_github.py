@@ -49,7 +49,7 @@ def test_errorhandler_github_without_request(bus: Bus) -> None:
 def test_errorhandler_connection_with_requests_exception(bus: Bus) -> None:
     """It raises a ConnectionError event."""
     response = FakeResponse()
-    cause = requests.RequestException(response=response)
+    cause = requests.RequestException(response=response)  # type: ignore[arg-type]
 
     with raises(events.ConnectionError):
         with github.errorhandler(bus=bus):

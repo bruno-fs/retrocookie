@@ -151,8 +151,8 @@ class Repository:
         # a newly created pull request is requested.
         for attempt in tenacity.Retrying(
             reraise=True,
-            stop=tenacity.stop_after_attempt(3),  # type: ignore[attr-defined]
-            wait=tenacity.wait_fixed(3),  # type: ignore[attr-defined]
+            stop=tenacity.stop_after_attempt(3),
+            wait=tenacity.wait_fixed(3),
         ):
             with attempt:
                 pull_request.issue().add_labels(*labels)
@@ -212,11 +212,11 @@ def errorhandler(*, bus: Bus) -> ExceptionHandler:
     @exceptionhandler
     def _handler2(error: github3.exceptions.ConnectionError) -> None:
         for arg in error.args:
-            if isinstance(arg, requests.RequestException):
+            if isinstance(arg, requests.RequestException) and arg.request is not None:
                 bus.events.raise_(
                     events.ConnectionError(
-                        arg.request.url,
-                        arg.request.method,
+                        arg.request.url,  # type: ignore[arg-type]
+                        arg.request.method,  # type: ignore[arg-type]
                         str(error),
                     )
                 )
