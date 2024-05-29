@@ -76,7 +76,7 @@ with the following contents:
 Requirements
 ------------
 
-* Python 3.7+
+* Python 3.8+
 * git >= 2.22.0
 
 
