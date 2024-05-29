@@ -1,4 +1,5 @@
 """Import pull requests."""
+
 from dataclasses import dataclass
 
 from retrocookie.pr import appname

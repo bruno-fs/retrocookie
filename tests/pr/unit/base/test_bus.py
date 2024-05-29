@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.bus."""
+
 import contextlib
 from typing import ContextManager
 

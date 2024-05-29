@@ -1,4 +1,5 @@
 """Interface for git-filter-repo."""
+
 import contextlib
 import io
 import re

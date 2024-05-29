@@ -1,4 +1,5 @@
 """Test cases for the __main__ module."""
+
 from pathlib import Path
 from typing import Any
 from typing import List

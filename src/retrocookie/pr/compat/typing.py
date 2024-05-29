@@ -1,4 +1,5 @@
 """Compatibility shims for typing."""
+
 import sys
 
 

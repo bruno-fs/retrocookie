@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.github."""
+
 from typing import Any
 
 import github3.exceptions

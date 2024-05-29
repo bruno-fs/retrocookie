@@ -1,4 +1,5 @@
 """Fake for retrocookie.retrocookie."""
+
 from pathlib import Path
 
 

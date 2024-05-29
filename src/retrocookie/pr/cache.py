@@ -1,4 +1,5 @@
 """Application cache."""
+
 import hashlib
 import json
 import sys

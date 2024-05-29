@@ -1,4 +1,5 @@
 """Command-line interface."""
+
 import contextlib
 import subprocess  # noqa: S404
 import webbrowser

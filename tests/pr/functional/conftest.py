@@ -1,4 +1,5 @@
 """Fixtures for functional tests."""
+
 import json
 import os
 import secrets

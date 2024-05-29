@@ -1,4 +1,5 @@
 """Tests for the console."""
+
 import contextlib
 import io
 from typing import Callable

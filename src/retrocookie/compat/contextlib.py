@@ -1,4 +1,5 @@
 """Compatibility shim for contextlib."""
+
 import contextlib
 from typing import Callable
 from typing import ContextManager

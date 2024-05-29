@@ -1,4 +1,5 @@
 """Fixtures for retrocookie.pr."""
+
 import sys
 from pathlib import Path
 from typing import Callable

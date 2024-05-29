@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.exceptionhandlers."""
+
 from functools import reduce
 from typing import Tuple
 from typing import Union

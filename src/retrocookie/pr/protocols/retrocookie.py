@@ -1,4 +1,5 @@
 """Protocol for retrocookie.retrocookie."""
+
 from pathlib import Path
 
 from retrocookie.pr.compat.typing import Protocol

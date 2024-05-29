@@ -1,4 +1,5 @@
 """Utilities for testing."""
+
 from typing import Iterator
 from typing import Type
 

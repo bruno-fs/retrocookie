@@ -1,4 +1,5 @@
 """Application console."""
+
 from typing import ContextManager
 from typing import Iterator
 

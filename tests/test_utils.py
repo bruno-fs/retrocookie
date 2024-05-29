@@ -1,4 +1,5 @@
 """Tests for retrocookie.utils."""
+
 import pytest
 
 from retrocookie.utils import removeprefix

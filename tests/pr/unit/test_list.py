@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.list."""
+
 from typing import cast
 from typing import Iterable
 from typing import List

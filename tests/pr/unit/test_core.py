@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.core."""
+
 import json
 import os
 from pathlib import Path

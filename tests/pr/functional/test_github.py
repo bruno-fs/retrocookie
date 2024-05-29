@@ -1,4 +1,5 @@
 """Functional tests for retrocookie.pr.adapters.github."""
+
 from pathlib import Path
 
 from retrocookie.pr.adapters import github

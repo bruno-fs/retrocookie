@@ -1,4 +1,5 @@
 """Import pull requests."""
+
 from typing import Collection
 from typing import Optional
 from urllib.parse import urlparse

@@ -1,4 +1,5 @@
 """Tests for core module."""
+
 from dataclasses import dataclass
 from pathlib import Path
 

@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.__main__."""
+
 import subprocess  # noqa: S404
 from typing import List
 

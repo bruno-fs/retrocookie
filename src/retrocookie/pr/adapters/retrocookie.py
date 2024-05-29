@@ -1,4 +1,5 @@
 """Retrocookie interface."""
+
 from pathlib import Path
 
 from retrocookie import retrocookie as _retrocookie

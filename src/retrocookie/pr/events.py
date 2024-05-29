@@ -1,4 +1,5 @@
 """Events and contexts for the message bus."""
+
 from dataclasses import dataclass
 from typing import List
 

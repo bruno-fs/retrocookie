@@ -1,4 +1,5 @@
 """Functional tests for retrocookie.pr.__main__."""
+
 from pathlib import Path
 from typing import Callable
 from typing import List

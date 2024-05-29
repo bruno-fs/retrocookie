@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.repository."""
+
 from retrocookie.pr.cache import Cache
 from retrocookie.pr.protocols import github
 from retrocookie.pr.repository import Repository

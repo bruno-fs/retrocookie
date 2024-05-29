@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.cache."""
+
 from pathlib import Path
 
 import pytest

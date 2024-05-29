@@ -1,4 +1,5 @@
 """Tests for retrocookie.pr.importer."""
+
 from typing import Callable
 
 import pytest

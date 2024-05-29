@@ -1,4 +1,5 @@
 """Tests for filter module."""
+
 from typing import Any
 from typing import Dict
 from typing import List

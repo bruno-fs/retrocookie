@@ -1,4 +1,5 @@
 """Listing pull requests."""
+
 import contextlib
 from typing import Collection
 from typing import Iterator
